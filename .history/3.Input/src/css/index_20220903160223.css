@@ -1,0 +1,24 @@
+.wrapper-form {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f3f3f3;
+  margin-bottom: 5px;
+  max-width: none;
+}
+.wrapper-form, .wrapper-form > li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper-form-state-1.wrapper-form > li {
+    width: 100%;
+}
+.wrapper-form > li {
+    min-height: 31px;
+}

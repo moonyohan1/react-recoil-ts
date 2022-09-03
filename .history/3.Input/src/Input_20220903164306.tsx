@@ -1,0 +1,20 @@
+
+import {controlState} from 'state'
+
+
+export const Input = ({value}) => {
+	
+
+	const value = useRecoilValue(controlState("cust"));
+	return (
+		<div className="form">
+			<div className="control-set">
+				<div className="control">
+					<input className="form-control " placeholder={value}>{value}</input>
+				</div>
+			</div>
+		</div>
+	);
+  };
+
+  

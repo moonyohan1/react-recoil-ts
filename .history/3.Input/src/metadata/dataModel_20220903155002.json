@@ -1,0 +1,15 @@
+[
+	{
+		"title": "123",
+		"cust": { "name": "ttt", "code": "xxx" },
+		"cc": [
+			{ "name": "ggg", "code": "hhh" },
+			{ "name": "ggg", "code": "hhh" }
+		]
+	},
+	{
+		"title": "222",
+		"cust": { "name": "vvv", "code": "ddd" },
+		"cc": { "type": ["S"], "code": [{ "name": "ttt", "code": "33" }] }
+	}
+]

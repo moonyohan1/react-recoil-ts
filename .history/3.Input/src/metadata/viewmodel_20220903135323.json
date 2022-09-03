@@ -1,0 +1,94 @@
+{
+    "contextID": "c_2",
+    "sid": "73612NS68R93N2D",
+    "sect_sid": "73612NS68R93N2D",
+    "section_container": "CONTENTS",
+    "name": "",
+    "view_type": "FORM",
+    "refer_type": "form",
+    "label": "",
+    "attributes": {
+        "display_order_no": "3",
+        "display_state": true,
+        "focus_order_no": "2",
+        "identity": "input_form_sect",
+        "form_partition": {
+            "name_field_width": "150",
+            "item_field_width": "600",
+            "number_component_width": "100",
+            "use_number_component_auto_width": true,
+            "partition_level": "1",
+            "use_item_field_auto_width": false
+        },
+        "use_search_model": false
+    },
+    "fields": [
+        {
+            "sect_sid": "73612NS68R93N2D",
+            "field_sid": "73612NS68WS3N2F",
+            "attributes": {
+                "display_order_no": 1,
+                "display_state": true,
+                "focus_order_no": "5",
+                "identity": "title_field",
+                "layout": [
+                    [
+                        "73612NS68WF3N2E"
+                    ]
+                ]
+            },
+            "name": "제목",
+            "refer_type": "",
+            "view_type": "",
+            "help_text": "",
+            "items": [
+                {
+                    "item_vm_key": "DATA∬73612NS68WF3N2E",
+                    "contextID": "c_2",
+                    "field_sid": "73612NS68WS3N2F",
+                    "item_sid": "73612NS68WF3N2E",
+                    "label": "제목",
+                    "refer_type": "title",
+                    "view_type": "TXT",
+                    "attributes": {
+                        "display_order_no": "1",
+                        "display_state": true,
+                        "focus_order_no": "1",
+                        "identity": "title_item",
+                        "calc": "",
+                        "can_input": true,
+                        "can_change": true,
+                        "not_null": true,
+                        "default_value": {
+                            "reflection_method": "N",
+                            "direct_input_value": "",
+                            "applied_period": "N"
+                        },
+                        "harmful_html_tag": true,
+                        "regex_type": "limit_default"
+                    },
+                    "sect_sid": "73612NS68R93N2D",
+                    "section_container": "CONTENTS",
+                    "components": [
+                        {
+                            "component_vm_key": "DATA∬73612NS691T3N2G",
+                            "comp_sid": "73612NS691T3N2G",
+                            "view_type": "INPUT",
+                            "refer_type": "title",
+                            "attributes": {
+                                "display_order_no": "1",
+                                "display_state": true,
+                                "focus_order_no": "1"
+                            },
+                            "value": "",
+                            "label": null,
+                            "dataRules": null,
+                            "className": "form-control"
+                        }
+                    ]
+                }
+            ],
+            "merge_line": false
+        }
+    ]
+}
