@@ -1,7 +1,7 @@
 
 import { useCallback } from 'react';
-import { useRecoilCallback, useRecoilState, useRecoilValue } from 'recoil';
-import {controlState, DataModel} from 'state'
+import { useRecoilSnapshot, useRecoilState, useRecoilValue } from 'recoil';
+import { controlState, DataModel, DataModelByPropId } from 'state';
 
 
 export const Input = ({value, onChange}) => {
@@ -18,9 +18,13 @@ export const Input = ({value, onChange}) => {
 
   export const ItemPresenter = ({pid}) =>{
 	const [value, setValue] = useRecoilState(controlState(pid));
+	const [value2, setValue2] = useRecoilState(DataModelByPropId(pid));
+
+	console.log(value2);
+
 	const onChange = useCallback((e)=>{
-		setValue(e.target.value);
-	}, [setValue])
+		setValue2(e.target.value);
+	}, [setValue2])
 
 	return <Input onChange={onChange} value = {value}></Input>
   }

@@ -8,22 +8,19 @@ import {
 } from "recoil";
 
 import { Form } from "Form/Form";
-import {Search} from 'Item/Search';
-import {Save} from 'Item/Save';
+import {Reset} from 'Item/Reest';
+import {Undo} from 'Item/Undo';
+import {Clean} from 'Item/Clean';
 import './css/index.css'
 
 function App() {
 	return (
 	  <div className="App">
 		<RecoilRoot>
-			<div>
-				<Form modelKey={'searchModel'}></Form>
-				<Search modelKey={'searchModel'}></Search>
-			</div>
-			<div>
-				<Form modelKey={'dataModel'}></Form>
-				<Save modelKey={'dataModel'}></Save>
-			</div>
+		  	<Form></Form>
+			<Reset></Reset>
+			<Undo></Undo>
+			<Clean></Clean>
 		</RecoilRoot>
 	  </div>
 	);

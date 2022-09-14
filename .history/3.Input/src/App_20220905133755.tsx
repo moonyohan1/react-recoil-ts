@@ -16,14 +16,10 @@ function App() {
 	return (
 	  <div className="App">
 		<RecoilRoot>
-			<div>
-				<Form modelKey={'searchModel'}></Form>
-				<Search modelKey={'searchModel'}></Search>
-			</div>
-			<div>
-				<Form modelKey={'dataModel'}></Form>
-				<Save modelKey={'dataModel'}></Save>
-			</div>
+			<Form modelKey={'searchModel'}></Form>
+			<Search modelKey={'searchModel'}></Search>
+		  	<Form modelKey={'dataModel'}></Form>
+			<Save modelKey={'dataModel'}></Save>
 		</RecoilRoot>
 	  </div>
 	);
